@@ -7,3 +7,37 @@
 ul li{
     list-style: none;
 }
+
+a:visited,a:link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.wrap{
+    width: 1248px;
+    margin: 0 auto;
+}
+#header_top{
+    display: flex;
+    justify-content: flex-end;
+}
+#header_top>li{
+    padding-left: 20px;
+}
+#header_logo{
+    width: 100px;
+}
+
+#header_main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#gnb{
+    display: flex;
+    width: 350px;
+    justify-content: space-around;
+}
+#header_main .search{
+    font-size: 1.3rem;
+}
