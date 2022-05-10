@@ -18,8 +18,8 @@ a:visited,a:link{
 /* 스크롤애니메이션 */
 .sa {
     opacity: 0;
-    transition: all 2.0s ease;
-    transition-duration: 2.0s;
+    transition: all 1.5s ease;
+    transition-duration: 1.5s;
   }
 
   /* 아래에서 위로 페이드 인 */
