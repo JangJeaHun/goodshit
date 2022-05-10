@@ -15,6 +15,51 @@ a:visited,a:link{
     text-decoration: none;
     color: inherit;
 }
+/* 스크롤애니메이션 */
+.sa {
+    opacity: 0;
+    transition: all 2.0s ease;
+    transition-duration: 2.0s;
+  }
+
+  /* 아래에서 위로 페이드 인 */
+  .sa-up {
+    transform: translate(0, 100px);
+  }
+  /* 위에서 아래로 페이드 인 */
+  .sa-down {
+    transform: translate(0, -100px);
+  }
+  /* 왼쪽에서 오른쪽으로 페이드 인 */
+  .sa-right {
+    transform: translate(-100px, 0);
+  }
+  /* 오른쪽에서 왼쪽으로 페이드 인 */
+  .sa-left {
+    transform: translate(100px, 0);
+  }
+  /* 왼쪽으로 회전하면서 페이드 인 */
+  .sa-rotateL {
+    transform: rotate(180deg);
+  }
+  /* 오른쪽으로 회전하면서 페이드 인 */
+  .sa-rotateR {
+    transform: rotate(-180deg);
+  }
+  /* 작아진 상태에서 커지면서 페이드 인 */
+  .sa-scaleUp {
+    transform: scale(.5);
+  }
+  /* 커진 상태에서 작아지면서 페이드 인 */
+  .sa-scaleDown {
+    transform: scale(1.5);
+  }
+
+  .sa.show {
+    opacity: 1;
+    transform: none;
+  }
+
 
 .wrap{
     width: 1248px;
@@ -28,6 +73,9 @@ a:visited,a:link{
 }
 #header_top>li{
     padding-left: 20px;
+}
+#header_top>li:hover{
+    text-decoration: underline;
 }
 
 #header_logo{
@@ -53,12 +101,25 @@ a:visited,a:link{
 #header_main .search{
     font-size: 1.3rem;
 }
-
+article .wrap img{
+    transition-duration: 0.4s;
+}
+article .wrap img:hover{
+    transform: scale(1.1);
+}
+article .wrap .btn{
+    transition-duration: 0.4s;
+}
+article .wrap .btn:hover{
+    transform: scale(1.2);
+    
+}
 article .wrap>h3{
     font-size: 20px;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 150px;
     padding-bottom: 50px;
+    font-weight: bolder;
 }
 article .wrap .div_wrap{
     display: flex;
@@ -68,6 +129,7 @@ article .wrap .div_wrap{
 }
 article .wrap .btn{
     margin-top: 20px;
+    margin-bottom: 50px;
 
 }
 article .wrap .btn>a{
@@ -85,4 +147,80 @@ article .wrap .btn>a{
 
 footer{
     background-color: beige;
+    height: 200px;
+}
+
+footer>.wrap{
+    color: #666;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px
+}
+footer>.wrap>.footer_l{
+    display: flex;
+    flex-direction: column;
+}
+footer>.wrap>.footer_l>p{
+    font-size: 14px;
+}
+footer>.wrap>.footer_l>address{
+    font-size: 24px;
+}
+footer>.wrap>.footer_l>span{
+    font-size: 14px;
+}
+
+/* about 시작 */
+#about{
+    background: url(../images/about_bg.png);
+    background-color: rgba(255, 239, 213, 0.479);
+}
+#about .text2, #about p, #about_2 span, #about_3{
+    font-family: "Nanum Brush Script";
+}
+article>#about>.wrap>.text1{
+    font-size: 16px;
+    text-align: left;
+}
+article>#about>.wrap>.text2{
+    font-size: 32px;
+}
+article>#about>.wrap>.about_img1{
+    text-align: right;
+}
+
+article>#about>.wrap>p{
+    text-align: center;
+    font-size: 40px;
+    padding: 20px 0;
+}
+article>#about>.wrap>.about_img2{
+    text-align: center;
+}
+article>#about>.wrap img{
+    transform: scale(1);
+}
+#about_2{
+    background: url(../images/about2_bg.png);
+    background-color: rgba(0, 0, 0, 0.308);
+}
+#about_2>.wrap>div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#about_2>.wrap>div span{
+    text-align: center;
+    font-size: 30px;
+}
+#about_3{
+    padding: 30px 0;
+}
+#about_3>.wrap>div{
+    text-align: center;
+}
+#about_3 img{
+    width: 70%;
 }
