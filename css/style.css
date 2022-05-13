@@ -224,3 +224,30 @@ article>#about>.wrap img{
 #about_3 img{
     width: 70%;
 }
+
+/* 장르별메뉴 */
+#side{
+    position: fixed;
+    left: 0;
+    top: 140px;
+    padding-top: 20px;
+    border: 1px solid black;
+}
+#item_wrap .item_row{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+#item_wrap .item_row h4{
+    margin-top: 10px;
+}
+
+.side_wrap{
+    margin-left: 20px;
+}
+.side_wrap>.fa-plus{
+    display: none;
+}
+.side_wrap>.submenu{
+    padding: 10px 0 10px 10px;
+}

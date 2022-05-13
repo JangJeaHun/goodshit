@@ -15,4 +15,20 @@ const saFunc = function() {
 
 window.addEventListener('load', saFunc);
 window.addEventListener('scroll', saFunc);
+
+$(".fa-minus").click(function (){
+
+  $(this).hide().siblings("i").show().siblings("form").hide();
+  
+  
+});
+$(".fa-plus").click(function (){
+
+  $(this).hide().siblings("i").show().siblings("form").show();;
+  
+});
+
+
+
+
 });
