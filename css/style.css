@@ -369,7 +369,10 @@ article>#about>.wrap img{
 
 /* 장르별메뉴 */
 #side{
+    overflow: scroll;
     position: fixed;
+    height:700px;
+    overflow-x: hidden;
     left: 0;
     top: 140px;
     padding-top: 20px;
