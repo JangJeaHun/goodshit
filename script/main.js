@@ -28,6 +28,21 @@ $(".fa-plus").click(function (){
   
 });
 
+var idx=0;
+
+setInterval(function(){
+
+  if(idx<3){
+    idx++;
+    console.log(idx);
+  }else{
+    idx=0;
+  }
+  $(".slide>a").eq(idx).stop().fadeIn().siblings("a").fadeOut();
+  
+},3000);
+
+
 
 
 
